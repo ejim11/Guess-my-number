@@ -45,7 +45,8 @@ document.querySelector(".check").addEventListener("click", function () {
     displayMessage(` 🏆 You won the game`);
     document.querySelector("body").style.backgroundColor = `green`;
     if (score > highScore) {
-      document.querySelector(".highscore").textContent = score;
+      highScore = score;
+      document.querySelector(".highscore").textContent = highScore;
     }
   }
   //   when guess is not same as secret number
