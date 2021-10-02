@@ -1,0 +1,101 @@
+/* giving default value for the width of boxes irrespective of 
+padding or margin */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* setting background color of body */
+body {
+  background-color: #222;
+  font-family: sans-serif;
+}
+/* styling for the header section */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem 1.5rem;
+  border-bottom: 3px solid #fff;
+  justify-content: center;
+}
+
+.again {
+  order: 1;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 800;
+}
+
+.between {
+  order: 2;
+  margin-left: auto;
+  color: #fff;
+}
+
+h1 {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.number {
+  display: flex;
+  font-weight: bold;
+  order: 4;
+  width: 7rem;
+  height: 5rem;
+  font-size: 5rem;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: -4rem;
+}
+
+/* styling the main section */
+main {
+  margin-top: 2rem;
+  display: flex;
+}
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.left {
+  align-items: center;
+}
+
+.guess {
+  width: 12rem;
+  height: 5rem;
+  background-color: inherit;
+  border: 4px solid #fff;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+.check {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+
+.right {
+  align-items: flex-start;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.label-score {
+  margin: 1rem 0;
+}
